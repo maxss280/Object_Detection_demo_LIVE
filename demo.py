@@ -48,7 +48,7 @@ def circle_contour(image, contour):
     #easy function
     ellipse = cv2.fitEllipse(contour)
     #add it
-    cv2.ellipse(image_with_ellipse, ellipse, green, 2, cv2.CV_AA)
+    cv2.ellipse(image_with_ellipse, ellipse, green, 2, cv2.LINE_AA)
     return image_with_ellipse
 
 def find_strawberry(image):
